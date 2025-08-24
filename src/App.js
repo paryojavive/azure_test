@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ApiInfo from './components/ApiInfo';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,11 +20,15 @@ function App() {
           </button>
         </div>
         
+        {/* API 정보 컴포넌트 추가 */}
+        <ApiInfo />
+        
         <div className="features">
           <h2>Features</h2>
           <ul>
             <li>✅ React 18 with Hooks</li>
             <li>✅ Azure Static Web Apps</li>
+            <li>✅ Backend API Integration</li>
             <li>✅ Modern CSS Styling</li>
             <li>✅ Responsive Design</li>
           </ul>
